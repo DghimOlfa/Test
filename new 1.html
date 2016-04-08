@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World!</title>
+</head>
+
+<body onload="alert('Salut Olfa');" onunload="alert('Au revoir Olfa');">
+ <!-- 1er cas ajouter code javascript directement dans la balise --> 
+<!-- le script dans une balise directement ; si on clique sur un lien il execute le script dasn l'evnt onclicjk -->
+<a href="#" onclick="alert('olfa');" >1ere methode</a>
+<!-- 2eme methode pour le lien -->
+<a href="javascript:alert('ajouter js dirctmnt dans le lien');"> 2eme methode </a>
+<img src="C:/Users/Olfa/Desktop/my_polaroids_1_by_h2okerim.png" onclick="alert('vous  cliquez sur une image');" />
+
+<!-- 2eme cas utiliser novelle baslise "script" -->
+    <script type="text/javascript">
+	//pour les vieux navigateurs  qui ne connaissent pas js on le considere comme commentaire html 
+	<!-- 
+<!-- afficher hello world dans une  boite de dialogue -->
+        alert("Hello world!");
+	// -->
+</script>
+<!-- importer un fichier js externe -->
+<script type="text/javascript" src="import.js"></script>
+</body>
+</html>
